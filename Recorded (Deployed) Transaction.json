@@ -1,0 +1,88 @@
+"accounts": {
+    "account{0}": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1673100396147,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0xa47185130a715937180f9f370b9932aff0bb0f6551c63aead756637e2070614c",
+        "contractName": "Bank",
+        "bytecode": "6080604052600a60015534801561001557600080fd5b5061046c806100256000396000f3fe60806040526004361061003f5760003560e01c806347e7ef24146100445780637c3a00fd1461009f578063854bec87146100ca578063a87430ba146100d4575b600080fd5b34801561005057600080fd5b5061009d6004803603604081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610140565b005b3480156100ab57600080fd5b506100b46101e2565b6040518082815260200191505060405180910390f35b6100d26101e8565b005b3480156100e057600080fd5b50610123600480360360208110156100f757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610344565b604051808381526020018281526020019250505060405180910390f35b6000606482029050806000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550426000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550505050565b60015481565b600033905060006101f882610368565b90506000816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001540190508034101561029b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260238152602001806104146023913960400191505060405180910390fd5b6000606482816102a757fe5b04905060008490508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f193505050501580156102f5573d6000803e3d6000fd5b5060008060008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001819055505050505050565b60006020528060005260406000206000915090508060000154908060010154905082565b6000806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154420390506000620f4240826001546000808873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015402028161040657fe5b049050809250505091905056fe496e73756666696369656e742066756e647320746f20706179206261636b206c6f616ea2646970667358221220b77edcae3cfc4476f3efb4890fe769f128286c1344cb2d04b10fa738080e003964736f6c63430007060033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    }
+  ],
+  "abis": {
+    "0xa47185130a715937180f9f370b9932aff0bb0f6551c63aead756637e2070614c": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "deposit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "payback",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "interestRate",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "users",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "loanBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdated",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+}
